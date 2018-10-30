@@ -6,6 +6,8 @@ commands like `ant` or `hybrisserver.sh` in the `hybris/bin/platform` directory.
 This little wrapper takes care of the navigation, regardless in what folder of the 
 project you are, and also sources `setantenv.sh`, if necessary
 
+You current working dir is *not* modified, so you can fire any command without loosing you current context.
+
 ## Installation
 
 1. Clone or download this repo
