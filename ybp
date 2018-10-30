@@ -1,0 +1,33 @@
+#!/usr/bin/env sh
+
+err() {
+  echo "$@" >& 2
+}
+
+lookup() {
+  curr_path="${1}"
+  # Search recursively upwards for hybris/bin/platform.
+  until [ "${curr_path}" = "/" ]; do
+    if [ -e "${curr_path}/hybris/bin/platform" ]; then
+      echo "${curr_path}/hybris/bin/platform"
+      break
+    else
+      curr_path=$(dirname "${curr_path}")
+    fi
+  done
+}
+
+platformdir=$(lookup "${PWD}")
+if [ -z "$platformdir" ]; then
+  err "Could not find hybris/bin/platform folder, will NOT execute '$*'"
+  exit 1
+fi
+# run cmd in subshell to keep current working dir
+( 
+  cd "$platformdir" || exit 1
+  if [ "$1" = "ant" ]; then
+    . ./setantenv.sh
+  fi
+  eval "$@"
+)
+
