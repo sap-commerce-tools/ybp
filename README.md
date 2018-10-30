@@ -27,5 +27,9 @@ ybp ./hybrisserver.sh debug
 
 ## Hint
 
-- For maximum ~~laziness~~ developer efficiency, define an alias for `ybp ant`, e.g
-  `alias ya='ybp ant'`
+For maximum ~~laziness~~ developer efficiency, I recommend following aliases:
+
+```
+alias ya='ybp ant'
+alias ys='ybp ./hybrisserver.sh'
+```
