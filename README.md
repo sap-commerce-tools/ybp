@@ -11,9 +11,9 @@ You current working dir is *not* modified, so you can fire any command without l
 ## Installation
 
 1. Clone or download this repo
-1. `chmod u+x ybp`
-1. put `ybp` somehwere on your `PATH`
-1. Never type `cd ../../../hybris/bin/platform` or `source setantenv.sh` again
+1. `chmod u+x ybp` (Linux / macOS only)
+1. put `ybp` / `ybp.bat` somehwere on your `PATH`
+1. Never type `cd ../../../hybris/bin/platform` or `source setantenv.sh` / `setantenv.bat` again
 
 ## Examples
 
