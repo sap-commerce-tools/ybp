@@ -18,6 +18,7 @@ You current working dir is *not* modified, so you can fire any command without l
 ## Examples
 
 ```
+cd myproject/hybris/bin/custom/myextension/some/sub/folder
 ybp ant clean all
 # run ant clean all for the whole platform
 
