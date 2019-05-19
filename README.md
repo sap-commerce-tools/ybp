@@ -1,4 +1,5 @@
 # ybp - Execute command in hybris/bin/platform
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W7VS24)
 
 When working with SAP Commerce, you have to execute most of the interesting
 commands like `ant` or `hybrisserver.sh` in the `hybris/bin/platform` directory.
