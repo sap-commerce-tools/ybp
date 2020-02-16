@@ -1,3 +1,6 @@
+> **Archived on 2020-02-16**\
+> I recently switched jobs away from SAP Commerce development
+
 # ybp - Execute command in hybris/bin/platform
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W7VS24)
 
